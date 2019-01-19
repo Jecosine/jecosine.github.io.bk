@@ -1,0 +1,100 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+    margin: 0px;
+}
+
+body {
+    background-color: #f3f3f3;
+    z-index: -1;
+}
+
+.card {
+    box-shadow: #d3d3d3 0 0 7px;
+}
+
+.unfold-symbol {
+    margin-right: 30px;
+}
+.item-fold,
+.item {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    margin-bottom: 1px;  
+}
+
+.item span.topic,
+.item-fold span.topic {
+    vertical-align: middle;
+    line-height: 60px;
+    height: 60px;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #666666;
+    text-shadow: #d1d1d1 0 0 1px;
+}
+
+.item span.topic {
+    font-size: 25px;
+    font-weight: 400;    
+}
+.unfold-symbol:after {    
+    width:15px;
+    height:15px;
+    border: solid #666666;
+    border-width: 0 2px 2px 0;
+    
+
+}
+/* Define upper part style */
+
+#up-bg {
+    width: 100%;
+    height: 205px;
+    background-color: #003D6D;
+    z-index: 10;
+     
+}
+#identity {
+    height: 120px;
+    margin-top: -60px;
+    
+}
+#head-icon {
+    width: 120px;
+    height: 120px;
+    
+    border-radius: 50%;
+    
+    margin-left: 75px;
+}
+#name {
+    vertical-align: top;
+    height: 60px;
+    margin-left: 40px;
+    font-size: 50px;
+    color: white;
+    text-shadow: #ffffff 0 0 1px;
+}
+#content-box {
+    float: right;
+    margin-top: 40px;
+    margin-right: 76px;
+    width: 1000px;
+    height: 300px;
+    
+}
+#sider-box {
+    float: left;
+    width: 240px;
+    height: 447px;
+    margin-left: 76px;
+    margin-top: 40px;
+    background-color: #cbcbcb;
+   
+}
+
