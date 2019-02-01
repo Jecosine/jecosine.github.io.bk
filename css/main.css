@@ -119,6 +119,9 @@ body::-webkit-scrollbar-track {
     width: 100%;
     height: 1080px;
     background-image: url('../img/dot.gif');
+    
+    background-attachment: fixed;
+    
     z-index: -1;
 }
 #identity {
@@ -158,6 +161,8 @@ body::-webkit-scrollbar-track {
     width: 100%;
     top: 700px;
     background: #eeeeee; 
+    box-shadow: #474747 0 0 30px;
+    
 }
 #content-box {
     
@@ -168,5 +173,11 @@ body::-webkit-scrollbar-track {
     height: 1300px;
     
 }
-
+#split-line {
+    height: 30px;
+    width: 100%;
+    background: url("../img/line.png") repeat-x;
+    background-size: contain;
+    box-shadow: #c5c5c5 0px 2px 10px;
+}
 
