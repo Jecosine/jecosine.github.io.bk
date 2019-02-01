@@ -15,15 +15,17 @@ body {
     box-shadow: #d3d3d3 0 0 7px;
 }
 
-.unfold-symbol {
-    margin-right: 30px;
+.item-fold {
+    box-sizing: border-box;
 }
 .item-fold,
 .item {
     width: 100%;
     height: 60px;
+    position: relative;
     background-color: white;
-    margin-bottom: 1px;  
+    padding-bottom: 1px;  
+    border-bottom: solid #d3d3d3 1px;
 }
 
 .item span.topic,
@@ -40,25 +42,50 @@ body {
 
 .item span.topic {
     font-size: 25px;
-    font-weight: 400;    
+    font-weight: 300;
 }
-.unfold-symbol:after {    
-    width:15px;
-    height:15px;
+
+.folded span.topic {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.folded {
+    background-color: #f7f7f7;
+}
+.item-fold:after { 
+    display: inline;
+    content: "  ";
+    
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    vertical-align: middle;
+          
     border: solid #666666;
     border-width: 0 2px 2px 0;
-    
-
+    right: 1.5rem; 
+    top: 1.5rem;
+    transform: rotate(-45deg);
+    transition: all .15s ease-in-out;
 }
+
+div.item-fold:hover,
+div.folded:hover {
+    cursor: pointer;
+	background-color: #ebebeb;
+}
+
+
 /* Define upper part style */
 
 #up-bg {
     width: 100%;
     height: 205px;
     background-color: #003D6D;
-    z-index: 10;
-     
+    z-index: 10;     
 }
+
 #identity {
     height: 120px;
     margin-top: -60px;
@@ -90,7 +117,7 @@ body {
 }
 #sider-box {
     float: left;
-    width: 240px;
+    width: 300px;
     height: 447px;
     margin-left: 76px;
     margin-top: 40px;
