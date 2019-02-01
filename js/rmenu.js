@@ -6,6 +6,5 @@ window.oncontextmenu = function(e){
     rmenu.style.width = '300px';
 }
 window.onclick = function(e){
-    document.querySelector("#menu").style.height = 0;
-
+    document.querySelector("#rmenu-unselected").style.width = 0;
 }
