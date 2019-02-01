@@ -88,6 +88,23 @@ div.folded:hover {
 .rmenu-item {
 
 }
+/* Define Scroll bar */
+body {
+    overflow: scroll;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 1px;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: #535353;
+}
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(1,1,1);
+    background: #d3d3d3;
+}
 /* Define upper part style */
 
 #up-bg {
@@ -123,7 +140,7 @@ div.folded:hover {
     margin-top: 40px;
     margin-right: 76px;
     width: 1000px;
-    height: 300px;
+    height: 1300px;
     
 }
 #sider-box {
