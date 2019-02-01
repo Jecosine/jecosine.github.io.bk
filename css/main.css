@@ -6,6 +6,13 @@
     margin: 0px;
 }
 
+#rmenu-unselected {
+    width: 0px;
+    height: 383px;
+    
+}
+
+
 body {
     background-color: #f3f3f3;
     z-index: -1;
