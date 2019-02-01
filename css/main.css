@@ -6,11 +6,6 @@
     margin: 0px;
 }
 
-#rmenu-unselected {
-    width: 0px;
-    height: 383px;
-    
-}
 
 
 body {
@@ -83,7 +78,16 @@ div.folded:hover {
 	background-color: #ebebeb;
 }
 
+/* Define right-click menu */
+#rmenu-unselected {
+    width: 0;
+    height: 383px;
+    position: absolute;
+    overflow: hidden;
+}
+.rmenu-item {
 
+}
 /* Define upper part style */
 
 #up-bg {
