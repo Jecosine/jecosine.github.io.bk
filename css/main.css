@@ -6,7 +6,10 @@
     margin: 0px;
 }
 
-
+*::selection {
+    background: #474747;
+    color: #c5c5c5;
+}
 
 
 .card {
@@ -141,7 +144,7 @@ body::-webkit-scrollbar-track {
     top: 0;
     width: 100%;
     min-height: 80px;
-    background: #ebebeb;
+    background: #ebebebd2;
     box-shadow: -2px 0px 20px #323232b0;
     z-index: 99;
 }
