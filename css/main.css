@@ -135,7 +135,7 @@ body::-webkit-scrollbar-track {
     
 }
 
-#navigation-bar {    
+#navigation-bar {      
     opacity: 1;
     position: fixed;
     top: 0;
@@ -145,7 +145,9 @@ body::-webkit-scrollbar-track {
     box-shadow: -2px 0px 20px #323232c5;
     z-index: 99;
 }
-
+#navigation-bar:hover {
+    background: #ebebebe8;
+}
 #head-icon {
     position: fixed;
     margin: auto;
@@ -173,16 +175,24 @@ body::-webkit-scrollbar-track {
 }
 .navigation-item {
     display: inline-block;
-    margin-right: 30px;
-    width: 100px;
-    height: 100%;
-    background: #474747;
-}
-
-.navigation-item:last-child {
+    font-family: monospace,'Courier New',Courier;
+    width: 120px;
+    height: 40px;
     margin-right: 0;
+    padding-top: 30px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: #474747;
 }
 
+.navigation-item:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    border-bottom: solid rgb(9, 165, 192) 10px;
+    box-shadow: #d1d1d1 0 0 1px;
+    
+}
 #identity {
     position: relative;  
     width:600px; 
