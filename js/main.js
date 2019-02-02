@@ -1,4 +1,22 @@
 'use strict';
+$(document).ready(function(){
+    var tri = $("#tri");
+    tri.click(function(){
+        var delta = 100;
+        var target = 700;
+        var i = setInterval(function(){
+            window.scroll(0,delta);
+            delta = delta + (target-delta)/20;
+            if (Math.abs(delta-700)<1){
+                window.scroll(0,700);
+                clearInterval(i);
+            }
+            
+        },5);
+        
+    });
+    
+});
 $(window).scroll (function(){
     var navi = $("#navigation-bar");
     if($(window).scrollTop() == 0){  
