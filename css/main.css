@@ -164,7 +164,10 @@ body::-webkit-scrollbar-track {
     from {opacity: 1;}
     to {opacity: 0;}
 }
-
+#navi-group {
+    margin: auto;
+    background: #474747;
+}
 #identity {
     position: relative;  
     width:600px; 
@@ -215,8 +218,7 @@ body::-webkit-scrollbar-track {
     box-shadow: #474747 0 0 30px;
     z-index: 10;
 }
-#content-box {
-    
+#content-box {    
     margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
