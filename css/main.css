@@ -76,7 +76,7 @@
 div.item-fold:hover,
 div.folded:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.01);
     background-color: #ffffff;
     border-left: solid rgb(9, 165, 192) 5px;
     box-shadow: 0 0 5px 2px rgba(59, 59, 59, 0.2);
@@ -136,13 +136,13 @@ body::-webkit-scrollbar-track {
 }
 
 #navigation-bar {    
-    opacity: 0;
+    opacity: 1;
     position: fixed;
     top: 0;
     width: 100%;
     min-height: 80px;
     background: #ebebebd2;
-    box-shadow: -2px 0px 20px #323232b0;
+    box-shadow: -2px 0px 20px #323232c5;
     z-index: 99;
 }
 
