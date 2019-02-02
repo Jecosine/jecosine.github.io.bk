@@ -85,16 +85,12 @@ div.folded:hover {
 div.item-fold {
     color: red;
 }
-
 /* Define right-click menu */
 #rmenu-unselected {
     width: 0;
     height: 383px;
     position: absolute;
     overflow: hidden;
-}
-.rmenu-item {
-
 }
 /* Define Scroll bar */
 body {
