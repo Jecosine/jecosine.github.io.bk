@@ -190,6 +190,28 @@ body::-webkit-scrollbar-track {
 #navigation-bar:hover {
     background: #ebebebe8;
 }
+.navigation-list {
+    opacity: 0;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin-top: 27px;
+    width: 120px;
+    box-shadow: inset 0px 4px 5px 0px rgba(59, 59, 59, 0.2);
+    background-color: #ebebebe8;
+    z-index: 0;
+}
+.navigation-list li {    
+    line-height: 40px;
+    text-align: center;
+}
+.navigation-list li:hover {
+    color: rgb(9, 165, 192);
+    transform: scale(1.01);    
+    border-left: solid rgb(9, 165, 192) 5px;
+    /* box-shadow: 0 0 5px 2px rgba(59, 59, 59, 0.2); */
+}
+
 #head-icon {
     position: fixed;
     margin: auto;
@@ -207,6 +229,10 @@ body::-webkit-scrollbar-track {
 @keyframes fadingOut {
     from {opacity: 1;}
     to {opacity: 0;}
+}
+@keyframes slideD {
+    from {}
+    to {height: 0;}
 }
 #navi-group {
     text-align: center;
@@ -230,10 +256,18 @@ body::-webkit-scrollbar-track {
 
 .navigation-item:hover {
     cursor: pointer;
-    /* background-color: #f3f2f2; */
+    background-color: #ebebeb9c;
     border-bottom: solid rgb(9, 165, 192) 10px;
-    color: rgb(9, 165, 192);
+    
     /* box-shadow: 0 0 5px 2px rgba(59, 59, 59, 0.2); */
+}
+.navigation-item:hover span {
+    color: rgb(9, 165, 192);
+}
+
+.navigation-item:hover ul {
+    animation: fadingIn 0.3s;
+    opacity: 1;
 }
 #identity {
     position: relative;  
