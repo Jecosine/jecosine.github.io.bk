@@ -50,7 +50,7 @@
 }
 
 .folded span.topic {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -203,6 +203,7 @@ body::-webkit-scrollbar-track {
 
 
 #name {    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 200px;
     text-align: center;    
     font-size: 100px;
