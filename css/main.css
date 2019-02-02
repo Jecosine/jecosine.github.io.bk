@@ -143,17 +143,15 @@ body::-webkit-scrollbar-track {
     box-shadow: -2px 0px 20px #323232b0;
     z-index: 10;
 }
-@keyframes fadingOut {
+@keyframes fadingIn {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-#navigation-bar:hover { 
-    animation: fadingOut 0.5s;
-    opacity: 1;
+@keyframes fadingOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
-#navigation-bar:left {
-    opacity: 1;
-}
+
 #identity {
     position: relative;  
     width:600px; 
