@@ -384,6 +384,11 @@ body::-webkit-scrollbar-track {
     font-weight: 800;
     color: #474747;
 }
+.abstract-cate:hover,
+.abstract-cate:hover span{
+    cursor: pointer;
+    color: rgb(9, 165, 192);
+}
 .abstract-img {
     border-radius: 20px 0 0 20px;
     height: 100%;
