@@ -185,7 +185,7 @@ body::-webkit-scrollbar-track {
     min-height: 80px;
     background: #ebebebd2;
     box-shadow: -2px 0px 20px #323232c5;
-    z-index: 99;
+    z-index: 9999;
 }
 #navigation-bar:hover {
     background: #ebebebe8;
