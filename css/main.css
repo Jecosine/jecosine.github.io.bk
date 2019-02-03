@@ -347,16 +347,31 @@ body::-webkit-scrollbar-track {
     margin-bottom: 20px;
     text-align: center;
 }
-@keyframes stageO {
+@keyframes stageon1 {
     from {box-shadow: #c5c5c5 0px 0px 10px;}
     to {box-shadow: #616161b4 0px 0px 10px 3px;}
 }
+@keyframes stageon2 {
+    from {transform: scale(1);}
+    to {transform: scale(1.1); }
+}
+@keyframes stageon3 {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
 .abstract-card:hover {
     background-color: #ffffffd0;
-    animation: stageO 0.4s;
+    animation: stageon1 0.4s;
     box-shadow: #616161b4 0px 0px 10px 3px;
 }
-
+.abstract-card:hover img {
+    animation: stageon2 0.4s;
+    transform: scale(1.1);
+}
+.abstract-card:hover .img-cover {
+    animation: stageon3 0.4s;
+    opacity: 0;
+}
 .abstract-cate {
     height: 50px;
     margin-bottom: 20px;
@@ -392,17 +407,20 @@ body::-webkit-scrollbar-track {
     height: 100%;
     border-radius: 20px 0 0 20px;
     /* z-index: 999; */
-    background-color: #47474742;
-    box-shadow: inset #0000009e 0px 0px 20px 0px;
+    background-color: #47474723;
+    box-shadow: inset #00000080 0px 0px 20px 0px;
 }
 
 .abstract-title {
     position: absolute;
-    text-align: center;
+    text-align: right;
     top: 0;
-    width: 60%;
+    right: 50px;
+    width: 50%;
     margin-left: 40%;
     margin-top: 50px;
-    padding-left: 40px;
+    line-height: 30px;
     color: #757575;
+    padding-bottom: 20px;
+    border-bottom: solid #757575c7 2px;
 }
