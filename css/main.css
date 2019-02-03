@@ -344,12 +344,12 @@ body::-webkit-scrollbar-track {
     height: 300px;
     border-radius: 20px 20px;
 }
-.abstract-title {
+.abstract-cate {
     height: 50px;
     margin-bottom: 20px;
     text-align: left;
 }
-.abstract-title span{
+.abstract-cate span{
     line-height: 50px;
     padding-left: 50px;
     font-size: 20px;
