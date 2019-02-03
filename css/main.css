@@ -451,3 +451,26 @@ h2.abstract-title:hover {
     color: #929292;
     font-style: italic;
 }
+
+/* Define content on view page */
+.view-body {
+    background: url("../img/star02.png");
+}
+#content-container {
+    width: 1000px;
+    height: 1500px;
+    margin: auto;
+    background-color: #ffffff9c;
+    box-shadow: #c5c5c5 0px 0px 10px;
+}
+.content-illust {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.content-illust img {
+    display: inline-block;
+    width: 100%;    
+}
