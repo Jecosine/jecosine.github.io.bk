@@ -201,7 +201,8 @@ body::-webkit-scrollbar-track {
     background-color: #ebebebe8;
     z-index: 0;
 }
-.navigation-list li {    
+.navigation-list li { 
+    font-size: 15px;   
     line-height: 40px;
     text-align: center;
 }
