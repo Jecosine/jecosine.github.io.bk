@@ -424,3 +424,19 @@ body::-webkit-scrollbar-track {
     padding-bottom: 20px;
     border-bottom: solid #757575c7 2px;
 }
+h2.abstract-title:hover {
+    cursor: pointer;
+    color: rgb(9, 165, 192);
+}
+.abstract-content {
+    position: absolute;
+    top: 120px;
+    width: 50%;
+    right: 50px;
+    text-align: right;    
+    color: #757575;
+}
+
+.abstract-card date {
+    
+}
