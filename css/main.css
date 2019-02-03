@@ -438,5 +438,10 @@ h2.abstract-title:hover {
 }
 
 .abstract-card date {
-    
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    margin-bottom: 20px;
+    color: #929292;
+    font-style: italic;
 }
