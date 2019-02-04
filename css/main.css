@@ -459,7 +459,7 @@ h2.abstract-title:hover {
 }
 #content-container {
     width: 1000px;
-    height: 1500px;
+    /* height: 1500px; */
     margin: auto;
     background-color: #ffffff9c;
     box-shadow: #c5c5c5 0px 0px 10px;
