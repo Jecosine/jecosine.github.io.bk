@@ -459,6 +459,7 @@ h2.abstract-title:hover {
 #content-container {
     width: 1000px;
     /* height: 1500px; */
+    animation: fadingIn 0.5s;
     margin: auto;
     background-color: #ffffff9c;
     box-shadow: #c5c5c5 0px 0px 10px;
@@ -472,11 +473,13 @@ h2.abstract-title:hover {
 }
 .content {
     position: relative;
+    
     margin-left: 40px;
     margin-right: 40px;
 }
 .content-illust img {
     display: inline-block;
+    
     width: 100%;    
 }
 .content-title {
