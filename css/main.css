@@ -495,13 +495,17 @@ h2.abstract-title:hover {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.code-block {
+.code-block{
     background-color: #474747;
     
 }
-.code-block pre {
-    font-family: Courier,'Courier New', monospace;
-    color: #e6e6e6;
+.code-block ol {
+    list-style: decimal;
+}
+.code-block li {
+    font-family: 'Courier New', Courier, monospace;
+    color: #d3d3d3;
+    list-style: decimal-leading-zero;
 }
 /* .content p:nth-child(2):first-letter {
     font-size: 2em;

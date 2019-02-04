@@ -15,9 +15,11 @@ $(document).ready(function(){
         },5);
         
     });
-    $(".code-block pre").html(
-        "<ol class = \"code-block-list\"><li>" + $(".code-block pre").html().replace(/\n/g,"\n</li><li>") +"\n</li></ol>"
+    $(".code-block").each(function(){
+        $(this).html("<ol class = \"code-block-list\"><li>" + $(".code-block pre").html().replace(/\n/g,"\n</li><li>") +"\n</li></ol>");
+    }
     );
+   
 });
 $(window).scroll (function(){
     var navi = $("#navigation-bar");
