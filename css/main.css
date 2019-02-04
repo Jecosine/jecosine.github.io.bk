@@ -455,7 +455,7 @@ h2.abstract-title:hover {
 
 /* Define content on view page */
 .view-body {
-    background: url("../img/star02.png");
+    /* background: url("../img/star02.png"); */
 }
 #content-container {
     width: 1000px;
@@ -472,7 +472,7 @@ h2.abstract-title:hover {
     justify-content: center;
 }
 .content {
-    
+    position: relative;
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -490,6 +490,7 @@ h2.abstract-title:hover {
 }
 .content p {
     line-height: 25px;
+    margin-bottom: 15px;
 }
 .content h2 {
     margin-top: 15px;
@@ -500,6 +501,7 @@ h2.abstract-title:hover {
     /* overflow-x: scroll; */
     word-break: break-all;
     word-wrap: break-word;
+    padding-top: 15px;
 }
 
 .code-block tr td:last-child {
@@ -516,4 +518,10 @@ h2.abstract-title:hover {
     word-break: keep-all;    
     
 }
-
+.count-bar {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    background: #f00000;
+}
