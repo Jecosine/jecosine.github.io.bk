@@ -495,7 +495,14 @@ h2.abstract-title:hover {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+.code-block {
+    background-color: #474747;
+    
+}
+.code-block pre {
+    font-family: Courier,'Courier New', monospace;
+    color: #e6e6e6;
+}
 /* .content p:nth-child(2):first-letter {
     font-size: 2em;
     /* margin-top: 1em; */
-} */

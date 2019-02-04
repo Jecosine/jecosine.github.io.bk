@@ -46,7 +46,19 @@
                 <p>As Python becomes a widely used language,more and more people can't tolerate their emotion of taking an attemption to "play" with python.If you are new to python, reading this article first might help you get a better understanding of python rather than walk in a misty forest.</p>
                 <h2>Why Choose Python?</h2>
                 <p>When we are working on a project,we will prefer to focus more on main implement of program than stack on a small but seems vital details,such as customize data structure.If you are using C or C++,you will be droven crazy about it.But in Python you might not need to concern it too much because python is "equiped" with a strong community,and various build-in type(they will be mentioned in later passages in this series).Now let's see a small program that do with python.</p>
+                <div class = "code-block">
+                    <pre>
+from PIL import Image
+from numpy import *
+
+imgdata = array(Image.open('001.jpg').convert('L'))
+for i in range(0,1024):
+    for j in range(0,576):
+        imgdata[i][j] = 255 - imgdata[i][j]
+                </pre>
+                </div>
             </div>
+            
             
         </div>
     </body>
