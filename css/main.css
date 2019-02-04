@@ -497,16 +497,23 @@ h2.abstract-title:hover {
 }
 .code-block{
     background-color: #474747;
-    
-}
-.code-block ol {
-    list-style: decimal;
-}
-.code-block li {
-    font-family: 'Courier New', Courier, monospace;
-    color: #d3d3d3;
-    list-style: decimal-leading-zero;
-    white-space: pre;
+    /* overflow-x: scroll; */
+    word-break: break-all;
     word-wrap: break-word;
+}
+
+.code-block tr td:last-child {
+    display: inline-block;    
+    margin-left: 40px;
+    padding: 0;    
+    width: calc(100% - 80px);
+    height: 100%;
+    line-height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ebebeb;
+    list-style: decimal-leading-zero;
+    white-space: pre-wrap;
+    word-break: keep-all;    
+    
 }
 

@@ -16,9 +16,10 @@ $(document).ready(function(){
         
     });
     $(".code-block").each(function(){
-        $(this).html("<ol class = \"code-block-list\"><li>" + $(".code-block pre").html().replace(/\n/g,"</li>\n<li>") +"\n</li></ol>");
+        $(this).html("<table class = \"code-block-list\"><tbody><tr><td class = \"line-num\"></td><td>"
+         + $(".code-block pre").html().replace(/\n/g,"</td>\n<tr><td class = \"line-num\"></td><td>") +"\n</td></tbody></table>");
     });
-   
+    
 });
 $(window).scroll (function(){
     var navi = $("#navigation-bar");
