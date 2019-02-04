@@ -506,7 +506,7 @@ h2.abstract-title:hover {
     font-family: 'Courier New', Courier, monospace;
     color: #d3d3d3;
     list-style: decimal-leading-zero;
+    white-space: pre;
+    word-wrap: break-word;
 }
-/* .content p:nth-child(2):first-letter {
-    font-size: 2em;
-    /* margin-top: 1em; */
+

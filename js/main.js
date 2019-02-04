@@ -16,9 +16,8 @@ $(document).ready(function(){
         
     });
     $(".code-block").each(function(){
-        $(this).html("<ol class = \"code-block-list\"><li>" + $(".code-block pre").html().replace(/\n/g,"\n</li><li>") +"\n</li></ol>");
-    }
-    );
+        $(this).html("<ol class = \"code-block-list\"><li>" + $(".code-block pre").html().replace(/\n/g,"</li>\n<li>") +"\n</li></ol>");
+    });
    
 });
 $(window).scroll (function(){
