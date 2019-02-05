@@ -340,7 +340,8 @@ body {
 /* Define abstracts in main page */
 .abstract-card {
     position: relative;
-    background-color: #ffffff9c;
+    background-color: #ffffff;
+    opacity: 0.6;
     box-shadow: #c5c5c5 0px 0px 10px;
     width: 100%;
     height: 300px;
