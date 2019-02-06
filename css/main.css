@@ -568,7 +568,7 @@ h2.abstract-title:hover {
 }
 /* Define Comment bar */
 #comment-container {
-    position: relative;
+    /* position: relative; */
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -581,8 +581,10 @@ h2.abstract-title:hover {
     position: relative;
     width: 1000px;
     /* height: auto; */
-    /* height: 100px; */
     box-shadow: #c5c5c5 0px 0px 10px;
+}
+.comment:after {
+    height: auto;
 }
 #comment-title {
     height: 50px;
@@ -594,7 +596,7 @@ h2.abstract-title:hover {
 }
 
 .comment-identity {
-    position: absolute;
+    /* position: absolute; */
     top: 20px;
     width: 50%;
     height: 100px;
@@ -604,7 +606,7 @@ h2.abstract-title:hover {
     width: 60px;
     height: 60px;
     margin-left: 20px;
-    margin-top: 20px;
+    top: 20px;
 }
 .id-headicon img {
     width: 60px;
@@ -628,7 +630,7 @@ h2.abstract-title:hover {
 .comment-content {
     position: absolute;
     margin-left: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     top: 50px;
 }
 
