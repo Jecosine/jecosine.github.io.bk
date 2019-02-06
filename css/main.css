@@ -566,3 +566,74 @@ h2.abstract-title:hover {
     height: 100%;
     border-right: solid #c5c5c5 2px;
 }
+/* Define Comment bar */
+#comment-container {
+    position: relative;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    /* box-shadow: #c5c5c5 0px 0px 10px; */
+    
+}
+
+.comment {
+    position: relative;
+    width: 1000px;
+    /* height: auto; */
+    /* height: 100px; */
+    box-shadow: #c5c5c5 0px 0px 10px;
+}
+#comment-title {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    text-align: left;
+    box-shadow: #c5c5c5 0px 0px 10px;
+    margin-bottom: 20px;
+}
+
+.comment-identity {
+    position: absolute;
+    top: 20px;
+    width: 50%;
+    height: 100px;
+}
+.id-headicon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.id-headicon img {
+    width: 60px;
+    height: 60px;
+}
+.id-nickname {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.comment-date {
+    position: absolute;
+    bottom: 20px;
+    font-style: italic;
+    color: #959595; 
+    font-weight: lighter;
+    font-size: 15px;
+}
+.comment-content {
+    position: absolute;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    top: 50px;
+}
+
+.comment-content img,
+.comment-content p {
+    display: inline;
+    vertical-align: middle;
+}
