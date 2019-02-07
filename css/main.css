@@ -580,6 +580,7 @@ h2.abstract-title:hover {
 .comment {
     position: relative;
     width: 1000px;
+    min-height: 140px;
     margin-bottom: 20px;
     /* height: auto; */
     box-shadow: #c5c5c5 0px 0px 10px;
@@ -625,7 +626,7 @@ h2.abstract-title:hover {
     color: #959595; 
     font-weight: lighter;
     font-size: 15px;
-    margin-left: 20px;
+    margin-left: 100px;
     margin-bottom: 20px;
 }
 .comment-content {
