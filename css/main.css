@@ -580,12 +580,11 @@ h2.abstract-title:hover {
 .comment {
     position: relative;
     width: 1000px;
+    margin-bottom: 20px;
     /* height: auto; */
     box-shadow: #c5c5c5 0px 0px 10px;
 }
-.comment:after {
-    height: auto;
-}
+
 #comment-title {
     height: 50px;
     line-height: 50px;
@@ -620,22 +619,24 @@ h2.abstract-title:hover {
     font-weight: 600;
 }
 .comment-date {
-    position: absolute;
-    bottom: 20px;
+    /* position: absolute; */
+    display: block;
     font-style: italic;
     color: #959595; 
     font-weight: lighter;
     font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 .comment-content {
     position: absolute;
     margin-left: 100px;
-    margin-bottom: 100px;
+    /* margin-bottom: 20px; */
     top: 50px;
 }
 
 .comment-content img,
 .comment-content p {
-    display: inline;
+    display: inline-block;
     vertical-align: middle;
 }
