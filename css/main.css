@@ -169,11 +169,15 @@ body {
     background-image: url('../img/down.png');
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-position: center center; */
     z-index: 999;
     animation: jump infinite 1.5s;
     backface-visibility: hidden;
-    /* transition: cubic-bezier(0.07, 0.38, 0.23, 0.79) 5s; */
+    
+}
+@keyframes jump {
+    0% {top: 630px;}
+    50% {top: 600px;}
+    100% {top: 630px;}
 }
 #tri:hover {
     animation: emp;
