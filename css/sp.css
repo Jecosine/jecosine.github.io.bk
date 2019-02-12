@@ -83,3 +83,10 @@
     from {opacity: 1;}
     to {opacity: 0;}
 }
+audio {
+    position: relative;
+    top: 100px;
+    width: 400px;
+    height: 100px;
+    z-index: 1000;
+}
