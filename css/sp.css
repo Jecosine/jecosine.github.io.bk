@@ -1,0 +1,10 @@
+#content-container {
+    position: relative;
+    box-shadow: none;
+    margin-top: 30%;
+}
+.text-sp p {
+    font-family: 'Microsoft YaHei UI Light'!important;
+    font-size: 20px;
+    width: 60%;
+}
