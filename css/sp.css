@@ -1,10 +1,43 @@
 #content-container {
     position: relative;
     box-shadow: none;
-    margin-top: 30%;
+    margin-top: 20%;
+    background: none;
+}
+.content-sp {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    border-radius: 10px;
+    background-color: rgba(32, 32, 32, 0.6);
+    box-shadow: rgba(51,51,51,0.44) 0 0 10px;
 }
 .text-sp p {
-    font-family: 'Microsoft YaHei UI Light'!important;
+    font-family: 'Microsoft YaHei UI'!important;
     font-size: 20px;
+    line-height: 1.6em;
+    color: rgb(255, 255, 255);
     width: 60%;
+}
+#background {
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/0.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#cover {
+    position: absolute;
+    top: 0;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/dot.gif");
+    
+    
+    z-index: 999;
 }
