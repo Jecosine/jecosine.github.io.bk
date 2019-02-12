@@ -98,6 +98,7 @@ div.item-fold {
 /* Define Scroll bar */
 body {
     overflow: scroll;
+    position: relative;
 }
 *::-webkit-scrollbar {
     width: 10px;
@@ -150,9 +151,9 @@ body {
     transform: scale(1.05);
 } */
 @keyframes jump {
-    0% {margin-top: 630px;}
-    50% {margin-top: 600px;}
-    100% {margin-top: 630px;}
+    0% {top: 630px;}
+    50% {top: 600px;}
+    100% {top: 630px;}
 }
 @keyframes emp {
     from {opacity:0.7;}
@@ -161,17 +162,22 @@ body {
 #tri {
     opacity: 0.7;
     position: absolute;
-    margin-top: 630px;
+    top: 630px;
     margin-left: calc(50% - 50px);
     width: 100px;
     height: 50px;
     background-image: url('../img/down.png');
     background-size: contain;
     background-repeat: no-repeat;
-    /* background-position: center center; */
     z-index: 999;
     animation: jump infinite 1.5s;
-    /* transition: cubic-bezier(0.07, 0.38, 0.23, 0.79) 5s; */
+    backface-visibility: hidden;
+    
+}
+@keyframes jump {
+    0% {top: 630px;}
+    50% {top: 600px;}
+    100% {top: 630px;}
 }
 #tri:hover {
     animation: emp;
@@ -565,4 +571,109 @@ h2.abstract-title:hover {
     width: 40px;
     height: 100%;
     border-right: solid #c5c5c5 2px;
+}
+/* Define Comment bar */
+#comment-container {
+    position: relative;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    /* box-shadow: #c5c5c5 0px 0px 10px; */
+    
+}
+
+.comment {
+    /* position: relative; */
+    width: 1000px;
+    min-height: 140px;
+    margin-bottom: 20px;
+    
+    margin-right: 20px;
+    
+    padding-top: 20px;
+    /* height: auto; */
+    box-shadow: #c5c5c5 0px 0px 10px;
+    border-radius: 10px;
+}
+
+#comment-title {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    text-align: left;
+    box-shadow: #c5c5c5 0px 0px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.comment-identity {
+    position: relative;
+    
+    width: 100%;
+    /* height: 100px; */
+}
+.id-headicon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    
+}
+.id-headicon img {
+    width: 60px;
+    height: 60px;
+}
+.id-nickname {
+    position: relative;
+    display: block;
+    margin-left: 100px;
+    
+    font-size: 20px;
+    font-weight: 600;
+}
+.comment-date {
+    position: absolute;
+    display: inline-block;
+    font-style: italic;
+    color: #959595; 
+    font-weight: lighter;
+    font-size: 15px;
+    right: 20px;
+    margin-left: 30px;
+    
+}
+.comment-content {
+    /* position: absolute; */
+    margin-left: 100px;
+    margin-top: 10px;
+    
+    margin-right: 40px;
+}
+
+.comment-content img,
+.comment-content p {
+    display: inline;
+    vertical-align: middle;
+}
+.cc-icon {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    
+}
+.reply-icon {
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/sns/comment.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    right: 100px;
+}
+.cc-icon span {
+    position: absolute;
+    right: 20px;
 }
