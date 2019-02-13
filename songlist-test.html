@@ -6,7 +6,7 @@
         
         <link rel = "shortcut icon" href = "favicon.ico" />
         <script src = "js/jquery-3.3.1.min.js"></script>
-        <link rel="stylesheet" href="css/APlayer.min.css">
+        
         <link rel = "stylesheet" href = "css/sp.css">
         <!-- <script src = "js/pre-main.js"></script> -->
     </head>
@@ -14,8 +14,9 @@
         <textarea id = "param"></textarea>
         <button type="button" class="btn btn-lg btn-success" id="submit">发射</button> 
         <textarea id = "result"></textarea>
-        
-        <div id="aplayer9" class="aplayer aplayer-withlist aplayer-fixed">
+        <link rel="stylesheet" href="https://www.bzqll.com/wp-content/themes/dong/css/APlayer.min.css">
+        <div id = "aplayer"></div>
+        <!-- <div id="aplayer" class="aplayer aplayer-withlist aplayer-fixed">
             <div class="aplayer-list aplayer-list-hide" style="max-height: 250px">
                 <ol style="max-height: 250px">            
                 </ol>
@@ -76,7 +77,7 @@
                     </div>
                 </div>
                 <div class="aplayer-notice"></div>
-                <div class="aplayer-miniswitcher">
+                <div class="miniswitcher">
                     <button class="aplayer-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
                             <path d="M22 16l-10.105-10.6-1.895 1.987 8.211 8.613-8.211 8.612 1.895 1.988 8.211-8.613z">  
@@ -86,8 +87,37 @@
                 </div>
             </div>
         
-        </div>
-        <script src="https://cdn.bootcss.com/aplayer/1.6.0/APlayer.min.js"></script>    <script src = "js/songlist.js"></script>
+        </div> -->
+        <script src="https://www.bzqll.com/wp-content/themes/dong/js/APlayer.min.js"></script> 
+        
+        <script>
+   
+$.ajax({
+    type: "POST",
+    url: "https://api.hibai.cn/api/index/index",
+    dataType: 'json',
+    data: {"TransCode":"020112","OpenId":"123456789","Body":{"SongListId":"2665859025"}},
+    success: function(e){
+        var musics = e.Body;
+        
+        for(var i = 0;i<e.Body.length;i++){
+            musics[i].id=e.Body[i].id;
+            musics[i].name=e.Body[i].title;
+            musics[i].artist=e.Body[i].author;
+            musics[i].cover=e.Body[i].pic;
+            musics[i].lrc=e.Body[i].lrc;
+        }
+        var ap = new APlayer({
+            element: document.getElementById('aplayer'),
+            fixed: true,
+            autoplay: true,
+            audio: musics
+        });
+    }
+});
+
+//         
+        </script>
         
         
     </body>
