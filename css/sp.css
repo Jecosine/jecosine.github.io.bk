@@ -27,7 +27,11 @@ html {
 }
 .content-sp:last-child {
     top: 60px;
+    
     opacity: 0;
+}
+.content-sp:last-child p {
+    font-size: 2em;
 }
 .text-sp p {
     font-family: 'Microsoft YaHei UI'!important;
