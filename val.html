@@ -31,7 +31,7 @@
                     var ap = new APlayer({
                         element: document.getElementById('aplayer'),
                         fixed: true,
-                        autoplay: true,
+                        autoplay: false,
                         audio: musics
                     });
                 }
@@ -198,5 +198,28 @@
             <div class = "page-tag"></div>
             <div class = "page-tag"></div>
         </div>
+        <script>
+            "use strict"
+            var group = $(".content-sp");
+            var pages = $(".page-tag");
+            var currentIndex = 0;
+            //alert(pages.length);
+            for (var i = 0;i < pages.length;i++){
+                pages[i].onclick = function(e){
+                    for (var i = 0;i < pages.length; i++){
+                        if (pages.index(this) == i){
+                            alert(i);
+                            group[i].style.visibility = "visible";
+                            currentIndex = i;
+                            pages[currentIndex].style.backgoundImage = "url(../img/sns/heart-s.png)";
+                        }
+                        else{
+                            pages[i].style.backgoundImage = "url(../img/sns/heart-d.png)";
+                            group[i].style.visibility = "hidden";
+                        }
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
