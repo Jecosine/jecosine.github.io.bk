@@ -1,7 +1,7 @@
 $("#submit").click(function(){
 	// var param = $("#param").val();
     // var url = $("#url").val();
-    var param = '{"TransCode":"020112","OpenId":"Test","Body":{"SongListId":"141998290"}}';
+    var param = $("#param").val();
     var url = "https://api.hibai.cn/api/index/index"
 	if(!param){
 		alert('提交参数未填写');
@@ -21,4 +21,22 @@ $("#submit").click(function(){
             }
         });
 	}
+});
+// import 'aplayer/dist/APlayer.min.css';
+// import APlayer from 'https://cdn.bootcss.com/aplayer/1.6.0/APlayer.min.js';
+var music = new Array();
+$.ajax({
+    type: "POST",
+    url: "https://api.hibai.cn/api/index/index",
+    dataType: 'json',
+    data: {"TransCode":"020112","OpenId":"123456789","Body":{"SongListId":"2665859025"}},
+    success: function(result){
+        var ap = new APlayer({
+            container: document.getElementById("aplayer9"),
+            fixed: true,
+            autoplay: true,
+            preload: "metadata",
+            music: result.Body            
+        });
+    }
 });

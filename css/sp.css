@@ -90,3 +90,11 @@ audio {
     height: 100px;
     z-index: 1000;
 }
+
+textarea {
+    display: block;
+    margin: auto;
+    width: 80%;
+    min-height: 500px;
+}
+/* Aplayer setting */
