@@ -1,29 +1,28 @@
-$("#submit").click(function(){
-	// var param = $("#param").val();
-    // var url = $("#url").val();
-    var param = $("#param").val();
-    var url = "https://api.hibai.cn/api/index/index"
-	if(!param){
-		alert('提交参数未填写');
-	}else{
-		$.ajax({
-            type: "POST",
-            url: url,
-            dataType: 'json',
-            data: JSON.parse(param),
-            success: function(result){
-				$("#result").val(JSON.stringify(result));
-                return false;
-            },
-            error: function(request) {
-                alert("Connection error");
-                return false;
-            }
-        });
-	}
-});
-// import 'aplayer/dist/APlayer.min.css';
-// import APlayer from 'https://cdn.bootcss.com/aplayer/1.6.0/APlayer.min.js';
+// $("#submit").click(function(){
+// 	// var param = $("#param").val();
+//     // var url = $("#url").val();
+//     var param = $("#param").val();
+//     var url = "https://api.hibai.cn/api/index/index"
+// 	if(!param){
+// 		alert('提交参数未填写');
+// 	}else{
+// 		$.ajax({
+//             type: "POST",
+//             url: url,
+//             dataType: 'json',
+//             data: JSON.parse(param),
+//             success: function(result){
+// 				$("#result").val(JSON.stringify(result));
+//                 return false;
+//             },
+//             error: function(request) {
+//                 alert("Connection error");
+//                 return false;
+//             }
+//         });
+// 	}
+// });
+
 var music = new Array();
 $.ajax({
     type: "POST",
@@ -33,7 +32,7 @@ $.ajax({
     success: function(result){
         var ap = new APlayer({
             container: document.getElementById("aplayer9"),
-            fixed: true,
+            fixed:true,
             autoplay: true,
             preload: "metadata",
             music: result.Body            

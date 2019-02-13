@@ -98,3 +98,13 @@ textarea {
     min-height: 500px;
 }
 /* Aplayer setting */
+.aplayer-icon {
+    position: relative;
+}
+.aplayer-icon svg {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 12px;
+    width: 12px;
+}
