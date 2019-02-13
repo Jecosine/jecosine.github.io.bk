@@ -1,16 +1,19 @@
 * {
     cursor: url("../img/normal.cur"),auto;
 }
+html {
+    background: rgb(128, 113, 126);
+}
 #content-container {
     position: relative;
     box-shadow: none;
     /* width: 1000px; */
     height: 300px;
-    margin-top: 15%;
+    margin-top: 16%;
     margin-left: auto;
     margin-right: auto;
     background: none;
-    z-index: 9999;
+    /* z-index: 9999; */
 }
 .content-sp {
     position: absolute;
@@ -31,6 +34,7 @@
 }
 
 #background {
+    pointer-events:none;
     position: absolute;
     top: 0;
     width: 100%;
@@ -39,7 +43,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 #cover {
@@ -98,4 +102,23 @@
 .aplayer-play svg {
     top: 0;
     left: 0;
+}
+
+#right {
+    position: absolute;
+    right: 100px;
+    top: 300px;
+    width: 100px;
+    height: 200px;
+    fill: rgba(173, 173, 173, 0.6);
+}
+
+#right:hover{
+    animation: bigger 0.5s;
+    fill: rgba(255, 255, 255, 0.801);
+    transform: scale(1.06);
+}
+@keyframes bigger {
+    from {transform: scale(1);}
+    to {transform: scale(1.06);}
 }
