@@ -83,20 +83,9 @@
     from {opacity: 1;}
     to {opacity: 0;}
 }
-audio {
-    position: relative;
-    top: 100px;
-    width: 400px;
-    height: 100px;
-    z-index: 1000;
-}
 
-textarea {
-    display: block;
-    margin: auto;
-    width: 80%;
-    min-height: 500px;
-}
+
+
 /* Aplayer setting */
 .aplayer-play svg {
     top: 0;

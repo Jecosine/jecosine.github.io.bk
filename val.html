@@ -10,8 +10,35 @@
     </head>
     <body>
         <script src = "js/main.js"></script>
-        <audio src = "test.mp3" controls="controls"></audio>
-         <!--
+        <link rel="stylesheet" href="https://www.bzqll.com/wp-content/themes/dong/css/APlayer.min.css">
+        <div id = "aplayer"></div>
+        <script src="https://www.bzqll.com/wp-content/themes/dong/js/APlayer.min.js"></script>       
+        <script>
+            $.ajax({
+                type: "POST",
+                url: "https://api.hibai.cn/api/index/index",
+                dataType: 'json',
+                data: {"TransCode":"020112","OpenId":"123456789","Body":{"SongListId":"2665859025"}},
+                success: function(e){
+                    var musics = e.Body;                    
+                    for(var i = 0;i<e.Body.length;i++){
+                        musics[i].id=e.Body[i].id;
+                        musics[i].name=e.Body[i].title;
+                        musics[i].artist=e.Body[i].author;
+                        musics[i].cover=e.Body[i].pic;
+                        musics[i].lrc=e.Body[i].lrc;
+                    }
+                    var ap = new APlayer({
+                        element: document.getElementById('aplayer'),
+                        fixed: true,
+                        autoplay: true,
+                        audio: musics
+                    });
+                }
+            });
+
+        </script>
+         
         <div id = "background">
             <div id = "cover"></div>
         </div>
@@ -170,6 +197,6 @@
             <div class = "page-tag"></div>
             <div class = "page-tag"></div>
             <div class = "page-tag"></div>
-        </div>-->
+        </div>
     </body>
 </html>

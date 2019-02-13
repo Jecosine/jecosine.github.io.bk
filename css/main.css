@@ -98,7 +98,7 @@ div.item-fold {
 /* Define Scroll bar */
 body {
     overflow: scroll;
-    position: relative;
+    /* position: relative; */
 }
 *::-webkit-scrollbar {
     width: 10px;
