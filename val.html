@@ -31,7 +31,7 @@
                     var ap = new APlayer({
                         element: document.getElementById('aplayer'),
                         fixed: true,
-                        autoplay: false,
+                        autoplay: true,
                         audio: musics
                     });
                 }
@@ -223,7 +223,7 @@
                     bg.fadeToggle(1000);
                     for (var i = 0;i < pages.length; i++){                        
                         if (pages.index(this) == i){
-                                                       
+                            right.css("visibility",'visible');                        
                             bg.css('background-image',"url(img/"+bgs[i]+")");
                             // bg.css('opacity',1);
                             group[i].style.visibility = "visible";
@@ -236,9 +236,10 @@
                                 para.css('display',"block");
                                 parad.css('animation',"none");
                                 parad.css('opacity',1);
+                                group[group.length-1].style.opacity = 0;
                             } 
                             else {
-                                right.css('right',100);             right.css("visibility",'visible');    
+                                right.css('right',100);               para.css('display',"block");
                                 right.css('animation','none');
                                 para.css('animation','none');
                                 para.css("top","175px");
