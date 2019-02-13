@@ -177,13 +177,18 @@
             </div>
             <div class = "content-sp">
                 <div class = "text-sp">
-                    <p>想和你去山林听闻清脆的鸟鸣<br>
+                    <p id = "dp">想和你去山林听闻清脆的鸟鸣<br>
                         想和你去都市唱遍繁华<br>
                         想和你去雪地打滚嬉闹<br>
-                        想和你游遍千山万水<br>
-                        <p id = "sp">想一直，一直...</p>
+                        想和你游遍千山万水                        
                     </p>
+                    <p id = "sp">想一直，一直...</p>
                 </div>
+            </div>
+            <div class = "content-sp">
+                    <div class = "text-sp">
+                        <p>和你在一起</p>                        
+                    </div>
             </div> 
         </div>
         <div class = "pages">
@@ -205,10 +210,11 @@
             var pages = $(".page-tag");
             var bg = $("#background");
             var currentIndex = 0;
-            
+            var parad = $('#dp');
+            var para = $('#sp');
             var right = $('#right');
             //alert(pages.length);
-            var bgs = {0:'0.png',1:'1.jpg',2:'2.jpg',3:'3.png',4:'4.jpg',5:'5.jpg',6:'6.jpg',7:'7.jpg',8:'8.jpg',9:'9.png',10:'10.jpg'};
+            var bgs = {0:'0.png',1:'1.jpg',2:'2.jpg',3:'3.png',4:'4.jpg',5:'5.jpg',6:'6.jpg',7:'7.jpg',8:'8.jpg',9:'9.png',10:'10.jpg',11:'11.png'};
             for (var i = 0;i < pages.length;i++){
                 pages[i].onclick = function(e){
                     
@@ -225,10 +231,21 @@
                             if (currentIndex == 10){
                                 right.css('right','300px');
                                 right.css('animation','swing infinite 0.5s');
+                                para.css('animation','none');
+                                para.css("top","175px");
+                                para.css('display',"block");
+                                parad.css('animation',"none");
+                                parad.css('opacity',1);
                             } 
                             else {
-                                right.css('right','100px');                
+                                right.css('right',100);             right.css("visibility",'visible');    
                                 right.css('animation','none');
+                                para.css('animation','none');
+                                para.css("top","175px");
+                                parad.css('animation',"none");
+                                parad.css('opacity',1);
+                                group[group.length-1].style.animation = "none";
+                                    group[group.length-1].style.opacity = 0;
                             }
                             pages[currentIndex].style.backgroundImage = "url(img/sns/heart-s.png)";
                         }
@@ -242,21 +259,44 @@
             pages[currentIndex].onclick();
             
             
-            right.click(function(){
-                if(currentIndex<11)
-                    currentIndex += 1;
-                if(currentIndex == 10){
-                    right.css('right',300);
-                    right.css('animation','swing infinite 0.5s');
-                }
-                else{
-                    right.css('right',100);                    
-                    right.css('animation','none');
-                }
+            right.click(function(){                
                 if(currentIndex == 10){
                     
+                    parad.css('animation',"fadingOut 0.5s");
+                    parad.css('opacity',0);
+                    
+                    para.css('animation','ct 1s')
+                    para.css("font-size","1.5em");
+                    para.css("top","100px");
+                    setTimeout(function(){
+                        para.fadeToggle(2000);
+                        bg.fadeOut(0);
+                        bg.fadeToggle(1000);
+                        bg.css('background-image',"url(img/"+bgs[11]+")");
+                        right.css("visibility",'hidden');
+                        group[group.length-1].style.animation = "fadingIn 1s";
+                        group[group.length-1].style.opacity = 1;
+                        for (var i = 0;i < pages.length; i++){
+                            pages[i].style.backgroundImage = "url(img/sns/heart-s.png)";
+                        }
+                    },3000);
                 }
-                pages[currentIndex].onclick();
+                else{
+                    right.css('right',100);                right.css("visibility",'visible');    
+                    right.css('animation','none');
+                    para.css('animation','none');
+                    para.css("top","175px");
+                    parad.css('animation',"none");
+                    parad.css('opacity',1);
+                    group[group.length-1].style.animation = "none";
+                        group[group.length-1].style.opacity = 0;
+                }
+                
+                if(currentIndex<10){
+                    currentIndex += 1;
+                    pages[currentIndex].onclick();
+                }    
+                
             });
             var left = $('#left');
             left.click(function(){

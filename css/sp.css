@@ -25,6 +25,10 @@ html {
     background-color: rgba(32, 32, 32, 0.6);
     box-shadow: rgba(51,51,51,0.44) 0 0 10px;
 }
+.content-sp:last-child {
+    top: 90px;
+    opacity: 0;
+}
 .text-sp p {
     font-family: 'Microsoft YaHei UI'!important;
     font-size: 20px;
@@ -136,6 +140,13 @@ html {
     transform: scale(1.06) rotate(-180deg);
     
 }
+#dp {
+    margin-bottom: 30px;
+}
+#sp {
+    position: absolute;
+    top: 175px;
+}
 @keyframes bigger {
     from {transform: rotate(-180deg),scale(1);}
     to {transform: rotate(-180deg),scale(1.06);}
@@ -144,4 +155,8 @@ html {
     0% {right:300px;}
     50% {right: 330px;}
     100% {right: 300;}
+}
+@keyframes ct {
+    from {top:175px;}
+    to {top:100px;font-size: 1.5em;}
 }
