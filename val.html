@@ -14,6 +14,7 @@
         <div id = "aplayer"></div>
         <script src="https://www.bzqll.com/wp-content/themes/dong/js/APlayer.min.js"></script>       
         <script>
+            var ap = undefined;
             $.ajax({
                 type: "POST",
                 url: "https://api.hibai.cn/api/index/index",
@@ -28,7 +29,7 @@
                         musics[i].cover=e.Body[i].pic;
                         musics[i].lrc=e.Body[i].lrc;
                     }
-                    var ap = new APlayer({
+                    ap = new APlayer({
                         element: document.getElementById('aplayer'),
                         fixed: true,
                         autoplay: true,
@@ -229,6 +230,7 @@
                             group[i].style.visibility = "visible";
                             currentIndex = i;
                             if (currentIndex == 10){
+                                
                                 right.css('right','300px');
                                 right.css('animation','swing infinite 0.5s');
                                 para.css('animation','none');
@@ -262,7 +264,7 @@
             
             right.click(function(){                
                 if(currentIndex == 10){
-                    
+                    ap.volume(0.3, true);
                     parad.css('animation',"fadingOut 0.5s");
                     parad.css('opacity',0);
                     
@@ -274,6 +276,7 @@
                         bg.fadeOut(0);
                         bg.fadeToggle(1000);
                         bg.css('background-image',"url(img/"+bgs[11]+")");
+                        ap.volume(0.7, true);
                         right.css("visibility",'hidden');
                         group[group.length-1].style.animation = "fadingIn 1s";
                         group[group.length-1].style.opacity = 1;
