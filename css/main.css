@@ -8,6 +8,10 @@
     color: #757575;
 }
 
+span i {
+    
+}
+
 *::selection {
     background: #474747;
     color: #c5c5c5;
@@ -210,7 +214,12 @@ body {
 .navigation-list li { 
     font-size: 15px;   
     line-height: 40px;
-    text-align: center;
+    
+    /* text-align: center; */
+}
+.navigation-list li i { 
+    margin-right: 20px;
+    /* text-align: center; */
 }
 .navigation-list li:hover {
     color: rgb(9, 165, 192);
@@ -218,7 +227,10 @@ body {
     border-left: solid rgb(9, 165, 192) 5px;
     /* box-shadow: 0 0 5px 2px rgba(59, 59, 59, 0.2); */
 }
+.navigation-list li:hover i {
+    color: rgb(9, 165, 192);
 
+}
 #head-icon {
     position: fixed;
     margin: auto;
@@ -248,27 +260,31 @@ body {
     height: 80px;
     
 }
+
 .navigation-item {
     display: inline-block;
     font-family: monospace,'Courier New',Courier;
     width: 120px;
     height: 40px;
-    margin-right: 0;
+    margin-right: 20px;
     padding-top: 30px;
     margin-bottom: 0;
     font-size: 20px;
     font-weight: 800;
     color: #474747;
 }
-
+.navigation-item i {
+    padding-right: 10px;
+}
 .navigation-item:hover {
     cursor: pointer;
-    background-color: #ebebeb69;
+    /* background-color: #ebebeb69; */
     border-bottom: solid rgb(9, 165, 192) 10px;
     
     /* box-shadow: 0 0 5px 2px rgba(59, 59, 59, 0.2); */
 }
-.navigation-item:hover span {
+.navigation-item:hover span,
+.navigation-item:hover span i {
     color: rgb(9, 165, 192);
 }
 
