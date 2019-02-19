@@ -187,6 +187,28 @@ body {
     animation: emp;
     opacity: 0.9;
 }
+#homepage {
+    position: absolute;
+    line-height: 80px;
+    left: 30px;
+    
+    width: 200px;
+    height: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 999;
+    background-image: url("../img/JECOSINE.png");
+}
+#homepage:hover {
+    cursor: pointer;    
+    background-image: url("../img/jecosine1.png");
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 #navigation-bar {      
     opacity: 1;
     position: fixed;
@@ -537,6 +559,8 @@ h2.abstract-title:hover {
     margin: auto;
     background-color: rgba(255, 255, 255, 0.932);
     box-shadow: #c5c5c5 0px 0px 10px;
+    padding-bottom: 50px;
+    border-radius: 0 0 10px 10px;
 }
 .content-illust {
     width: 100%;
@@ -550,6 +574,7 @@ h2.abstract-title:hover {
     
     margin-left: 40px;
     margin-right: 40px;
+    
 }
 .content-illust img {
     display: inline-block;
@@ -656,7 +681,7 @@ h2.abstract-title:hover {
     margin-bottom: 20px;
     
     margin-right: 20px;
-    
+    background-color: rgba(255, 255, 255, 0.932);
     padding-top: 20px;
     /* height: auto; */
     box-shadow: #c5c5c5 0px 0px 10px;
@@ -671,6 +696,7 @@ h2.abstract-title:hover {
     box-shadow: #c5c5c5 0px 0px 10px;
     border-radius: 10px;
     margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.932);
 }
 
 .comment-identity {
@@ -742,4 +768,8 @@ h2.abstract-title:hover {
 .cc-icon span {
     position: absolute;
     right: 20px;
+}
+
+.reply-amount i {
+    margin-right: 5px;
 }
