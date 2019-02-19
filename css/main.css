@@ -478,9 +478,9 @@ html {
 .abstract-cate span{
     line-height: 50px;
     padding-left: 50px;
-    font-size: 1.2em;
+    font-size: 20px;
     font-weight: 800;
-    color: #474747;
+    color: #757575;
 }
 .abstract-cate:hover,
 .abstract-cate:hover span{
@@ -524,7 +524,7 @@ html {
     margin-top: 50px;
     line-height: 30px;
     color: #757575;
-    font-size: 1.5em;
+    font-size: 30px;
     padding-bottom: 20px;
     border-bottom: solid #757575c7 2px;
 }
@@ -778,8 +778,7 @@ h2.abstract-title:hover {
     margin-right: 5px;
 }
 
-@media screen and (max-width: 860px) {
-    #page-main {
-        display: none;
-    }
+@keyframes appear {
+    from {padding-top: 10px;}
+    to {padding-top: 30px;}
 }

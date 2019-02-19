@@ -22,17 +22,20 @@ $(document).ready(function(){
     
 });
 $(window).scroll (function(){
+    var items = $(".navigation-item");
     var navi = $("#navigation-bar");
     if($(window).scrollTop() == 0){  
         navi.css('animation',"fadingOut 0.3s"); 
+        for (var i = 0;i<items.length;i++){items[i].style.animation = "none";}
         navi.css('opacity',0);               
-        navi.mouseenter(function(){navi.css('animation',"fadingIn 0.3s");navi.css('opacity',"1");});
-        navi.mouseleave(function(){navi.css('animation',"fadingOut 0.3s");navi.css('opacity',"0");});
+        navi.mouseenter(function(){navi.css('animation',"fadingIn 0.3s");navi.css('opacity',"1");for (var i = 0;i<items.length;i++){items[i].style.animation = "appear 0.3s";}});
+        navi.mouseleave(function(){navi.css('animation',"fadingOut 0.3s");navi.css('opacity',"0");for (var i = 0;i<items.length;i++){items[i].style.animation = "none";}});
     }   
     else{
         navi.off('mouseenter');
         navi.off('mouseleave');
         navi.css('animation',"fadingIn 0.3s");
+        for (var i = 0;i<items.length;i++){items[i].style.animation = "appear 0.3s";}
         navi.css('opacity',1); 
     }
 });
