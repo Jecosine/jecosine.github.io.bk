@@ -203,6 +203,9 @@ html {
     z-index: 999;
     background-image: url("../img/JECOSINE.png");
 }
+#navi-bar {
+    display: none;
+}
 #homepage:hover {
     cursor: pointer;    
     background-image: url("../img/jecosine1.png");
@@ -782,3 +785,4 @@ h2.abstract-title:hover {
     from {padding-top: 10px;}
     to {padding-top: 30px;}
 }
+

@@ -1,0 +1,17 @@
+@media screen and (max-width: 1100px) {
+
+    #homepage {
+        margin-left: 50px;
+    }
+    #navi-bar {
+        display: inline-block;
+        position: absolute;
+        width: 50px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 35px;
+        vertical-align: middle;
+        left: 20px;
+        
+    }
+}
