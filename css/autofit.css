@@ -1,4 +1,4 @@
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1180px) {
 
     #homepage {
         margin-left: 50px;
@@ -12,6 +12,70 @@
         font-size: 35px;
         vertical-align: middle;
         left: 20px;
+    }
+    #head-icon {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 150px;
+        left: 40px;
         
+    }
+    #navigation-bar {
+        width: 300px;
+        height: -webkit-fill-available;
+        float: left;        
+    }
+    #navi-group {
+        margin-top: 350px;
+        width: 100%;
+        height: auto;
+        text-align: left;
+    }
+    .navigation-item {
+        margin: 0;
+        padding: 0;
+        width: calc(100% - 50px);
+        padding-left: 50px;
+        margin-bottom: 20px;
+    }
+    .navigation-item span {
+        line-height: 40px;;
+    }
+    .navigation-list {
+        position: inherit;
+        height: 0;
+        margin: 0;
+        width: 200px;
+        overflow: hidden;
+        margin-top: 0;
+        margin-left: -20px;
+        box-shadow: none;
+        background-color: unset;
+        text-align: left;
+    }
+    .navigation-list li {
+        width: 100%;
+    }
+    .navigation-item:hover {
+        border: none;
+        border-left: solid rgb(9, 165, 192) 10px;
+    }
+    .navigation-item:first-child:hover .navigation-list {
+
+        animation: unfold0 0.2s;  
+        height: auto;      
+    }
+    .navigation-item:nth-child(3):hover .navigation-list {
+        animation: unfold2 0.2s; 
+        height: auto; 
+    }
+    @keyframes unfold0 {
+        from {height: 0;}
+        to {height: 80px;}        
+    }
+    @keyframes unfold2 {
+        from {height: 0;}
+        to {height: 120px;}        
     }
 }

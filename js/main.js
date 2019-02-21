@@ -1,5 +1,17 @@
 'use strict';
 $(document).ready(function(){
+    var navigationItems = $(".navigation-item");
+    for (var i = 0; i < navigationItems.length;i++){
+        navigationItems[i].is_unfolded = false;
+        navigationItems[i].click(function(){
+            if (navigationItems[i].is_unfolded){
+                navigationItems[i].getElementsByTag("ul").style.animation = "unfold";
+                navigationItems[i].getElementsByTag("ul").style.height = "auto";
+            }
+            navigationItems[i].is_unfolded = true;
+            
+        })
+    }
     var tri = $("#tri");
     tri.click(function(){
         var delta = 100;

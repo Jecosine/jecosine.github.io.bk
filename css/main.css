@@ -213,7 +213,7 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
 }
-#navigation-bar {      
+#navigation-bar {
     opacity: 1;
     position: fixed;
     top: 0;
@@ -284,7 +284,6 @@ html {
     margin: auto;
     width: 50%;
     height: 80px;
-    
 }
 
 .navigation-item {
@@ -314,7 +313,7 @@ html {
     color: rgb(9, 165, 192);
 }
 
-.navigation-item:hover ul {
+.navigation-item:hover div {
     animation: fadingIn 0.3s;
     opacity: 1;
 }
