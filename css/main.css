@@ -192,15 +192,14 @@ html {
     position: absolute;
     line-height: 80px;
     left: 30px;
-    
     width: 200px;
     height: 80px;
     display: inline-block;
     vertical-align: middle;
-    background-position: center center; 
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 999;
+    z-index: 9999;
     background-image: url("../img/JECOSINE.png");
 }
 #navi-bar {
@@ -221,7 +220,7 @@ html {
     min-height: 80px;
     background: #ebebebd2;
     box-shadow: -2px 0px 20px #323232c5;
-    z-index: 9999;
+    z-index: 999;
 }
 #navigation-bar:hover {
     background: #ebebebe8;
@@ -263,9 +262,9 @@ html {
     right: 50px;
     top: 10px;
     width: 50px;
-    height: 50px;    
-    border-radius: 50%;   
-    z-index: 999; 
+    height: 50px;
+    border-radius: 50%;
+    z-index: 999;
 }
 @keyframes fadingIn {
     from {opacity: 0;}
