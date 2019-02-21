@@ -13,6 +13,9 @@
         vertical-align: middle;
         left: 20px;
     }
+    #navi-bar:hover i {
+        color: rgb(9, 165, 192);
+    }
     #head-icon {
         position: absolute;
         width: 100px;
@@ -70,6 +73,7 @@
         animation: unfold2 0.2s; 
         height: auto; 
     }
+    
     @keyframes unfold0 {
         from {height: 0;}
         to {height: 80px;}        
