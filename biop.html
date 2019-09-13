@@ -104,6 +104,20 @@ get_sources()
         </div>
         <div id = "comment-container">
             <div id = "comment-title"><span>Comments</span></div>
+            <div class="comment-editor">
+                <form action="banan.php" method="POST">
+                    <div class="guest-info">
+                        <div class="useremail input-box">
+                            <span>Email</span>
+                            <input type="text" name="useremail" id="guest-email" class="input-field" />
+                        </div>
+                        <div class="guest-name input-box">
+                            <span>Nickname</span>
+                            <input type="text" name="username" id="guest-name" class="input-field" />
+                        </div>                   
+                    </div>
+                </form>
+            </div>
             <div class = "comment">
                 <div class =  "comment-identity">
                     <div class = "id-headicon"><img src = "img/head.png" /></div>
