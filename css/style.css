@@ -117,7 +117,25 @@ form {
     font-size: 22px;
     font-weight: bold;
     transform: skew(-25deg);
+    font-style: none;
+    text-decoration: none;
+    text-align: center;
 }
 #cart:hover {
     background-color: rgb(255, 215, 154);
+
+}
+#cart div {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    transform: skewX(25deg);
+}
+#cart div i {
+    width: 30px;
+    height: 50px;
+    font-size: 30px;
+    margin-right: 20px;
+
 }
