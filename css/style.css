@@ -6,15 +6,21 @@
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body {
+    overflow: scroll;
+}
 #navigation-container {
     position: absolute;
+    min-width: 1440px;
     top: 0;
     width: 100%;
-    height: 125px;
-    background-color: #ECECEC;
+    overflow: hidden;
+    height: 95px;
+    background-color: rgb(243, 243, 243);
 }
 #navigation-wrap {
     width: calc(100% - 200px);
+    
     height: 50px;
     margin-left: 100px;
 
@@ -26,7 +32,8 @@
     top: 0;
     width: 990px;
     height: 50px;
-    margin-left: 30px;
+    margin-left: 100px;
+
 }
 #search-bar-bg {
     position: relative;
@@ -65,7 +72,7 @@ form {
     margin-left: -20px;
     display: inline-block;
     background-color: #818181;
-    width: 150px;
+    width: 160px;
     height: 50px;
     transform: skewX(-25deg);
     z-index: 1;
@@ -75,16 +82,12 @@ form {
 }
 #submit-button div {
     transform: skewX(25deg);
+    margin-left: 10px;
 }
 #submit-button:hover {
     background-color: rgba(129, 129, 129, 0.78);
 }
-#sub-navi {
-    width: 100%;
-    height: 45px;
-    background-color: white;
 
-}
 #icon-container {
     display: inline-block;
     width: 111px;
@@ -101,19 +104,19 @@ form {
     width: 120px;
     height: 50px;
     margin-left: 50px;
-    background-color: #FECD85;
+    background-color: rgb(255, 170, 42);
     color: white;
     transform: skewX(-25deg);
     z-index: 10;
 }
-#cart {
+#cart{
     display: inline-block;
     position: relative;
     float: right;
     right: -120px;
     width: 200px;
     height: 50px;
-    background-color: #FECD85;
+    background-color: rgb(255, 170, 42);
     font-size: 22px;
     font-weight: bold;
     transform: skew(-25deg);
@@ -138,4 +141,138 @@ form {
     font-size: 30px;
     margin-right: 20px;
 
+}
+#sub-navi {
+    width: 100%;
+    height: 45px;
+    background-color: #fafafa;
+}
+.subnavi-item {
+    text-decoration: none;
+    color:  #9E9E9E;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    line-height: 45px;
+    margin-left: 20px;
+}
+.subnavi-item:hover {
+    color:  rgba(158, 158, 158, 0.637);
+}
+.subnavi-item:first-child {
+    color: rgb(255, 170, 42);
+}
+.subnavi-item:first-child:hover {
+    color: rgba(255, 170, 42, 0.63);
+}
+#subnavi-g {
+    margin-left: 330px;
+}
+
+#main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    top: 95px;
+    background-color: rgb(235, 235, 235);
+}
+
+#main-wrap {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 1440px;
+    height: 900px;
+}
+
+#main-bg {
+    position: absolute;
+    top: 0;
+    width: 1440px;
+    max-width: 1440px;
+    height: 600px;
+    background: linear-gradient( -180deg, rgba(255, 255, 255, 0.055),  rgba(255, 255, 255, 0.418), rgba(235, 235, 235, 0.74), rgb(235, 235, 235)), url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#main-wrapper {
+    position: relative;
+    top: 350px;
+    width: calc(100% - 40px);
+    
+}
+#left-container {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    width: 270px;
+    height: 510px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+#left-title {
+    color: rgb(255, 156, 42);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 60px;
+    width: 100%;
+    height: 60px;
+    text-align: left;
+    padding-left: 40px;
+}
+#cate-l {
+    width: 100%;
+    text-align: left;
+}
+#cate-l li {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    color: #929292;
+    background-color: #f7f7f7;
+    width: calc(100% - 40px);
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    padding-left: 40px;
+}
+#cate-l li:hover {
+    color: #ffffff;
+    background-color: rgb(255, 170, 42);
+    cursor: pointer;
+}
+#center-container {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    width: 720px;
+    height: 510px;
+    background: white;
+    margin-left: 30px;
+
+}
+#right-container {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    width: 320px;
+    height: 510px;
+    margin-left: 30px;
+    background-color: white;
+}
+#ruser-info {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    width: 100%;
+    height: 210px;
+}
+.user-avatar {
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/usericon@2x.png)
 }
