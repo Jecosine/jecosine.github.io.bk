@@ -271,8 +271,8 @@ form {
     align-items: center;
     width: calc(100% - 40px);
     margin-left: 20px;
-    padding-bottom: 20px;
-    border-bottom: solid 2px rgb(197, 197, 197);
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgb(197, 197, 197);
 }
 .user-avatar {
     width: 80px;
@@ -296,5 +296,52 @@ form {
     margin-left: 10px;
 }
 #rlogin a:hover {
-    color: 
+    color: #767676;
+}
+#right-reco {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#daily-title {
+    color: #767676;
+    font-size: 16px;
+    font-weight: 800;
+}
+.daily-item {
+    display: flex;
+    width: 100%;
+    height: 15px;
+    margin-top: 10px;
+}
+.daily-head {
+    display: inline-block;
+    color: #929292;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 14px;
+}
+.daily-head:hover {
+    text-decoration: underline;
+    color: rgb(255, 170, 42);;
+    cursor: pointer;
+}
+.daily-icon {
+    display: inline-block;
+    width: 40px;
+    height: 15px;
+    text-align: center;
+    margin-right: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 15px;
+}
+.hot-tag {
+    background-color: #FECD85;
+}
+
+.new-tag {
+    background-color: crimson;
 }
