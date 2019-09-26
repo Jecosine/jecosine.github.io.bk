@@ -11,11 +11,11 @@ body {
 }
 #navigation-container {
     position: absolute;
-    min-width: 1440px;
+    min-width: 1280px;
     top: 0;
     width: 100%;
     overflow: hidden;
-    height: 95px;
+    height: 85px;
     background-color: rgb(243, 243, 243);
 }
 #navigation-wrap {
@@ -30,7 +30,7 @@ body {
     display: inline-block;
     position: absolute;
     top: 0;
-    width: 990px;
+    width: 950px;
     height: 50px;
     margin-left: 100px;
 
@@ -144,26 +144,32 @@ form {
 }
 #sub-navi {
     width: 100%;
-    height: 45px;
+    height: 35px;
     background-color: #fafafa;
+
 }
 .subnavi-item {
     text-decoration: none;
     color:  #9E9E9E;
     font-weight: bold;
-    font-size: 20px;
-    text-decoration: underline;
-    line-height: 45px;
+    font-size: 15px;
+    /* text-decoration: underline; */
+    line-height: 35px;
+    border-radius: 2px;
     margin-left: 20px;
+    padding: 2px;
+    border: solid 1px #ffffff4b;
 }
 .subnavi-item:hover {
-    color:  rgba(158, 158, 158, 0.637);
+    color:  rgba(255, 255, 255, 0.829);
+    background-color: #FECD85;
+    border: solid 1px #DDDDDD;
 }
 .subnavi-item:first-child {
     color: rgb(255, 170, 42);
 }
 .subnavi-item:first-child:hover {
-    color: rgba(255, 170, 42, 0.63);
+    color: rgba(255, 255, 255, 0.932);
 }
 #subnavi-g {
     margin-left: 330px;
@@ -175,7 +181,7 @@ form {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    top: 95px;
+    top: 85px;
     background-color: rgb(235, 235, 235);
 }
 
@@ -183,19 +189,19 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 1440px;
+    min-width: 1280px;
     height: 900px;
 }
 
 #main-bg {
     position: absolute;
     top: 0;
-    width: 1440px;
-    max-width: 1440px;
-    height: 600px;
+    width: 1280px;
+    max-width: 1280px;
+    height: 570px;
     background: linear-gradient( -180deg, rgba(255, 255, 255, 0.055),  rgba(255, 255, 255, 0.418), rgba(235, 235, 235, 0.74), rgb(235, 235, 235)), url(../images/bg.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 #main-wrapper {
     position: relative;
@@ -207,7 +213,7 @@ form {
     display: inline-block;
     position: relative;
     top: 0;
-    width: 270px;
+    width: 250px;
     height: 510px;
     background-color: white;
     margin-left: 10px;
@@ -249,10 +255,10 @@ form {
     display: inline-block;
     position: relative;
     top: 10px;
-    width: 750px;
+    width: 680px;
     height: 510px;
     background: white;
-    margin-left: 30px;
+    margin-left: 10px;
 
 }
 #right-container {
@@ -260,7 +266,7 @@ form {
     float: right;
     position: relative;
     top: 10px;
-    width: 300px;
+    width: 270px;
     height: 510px;
     /* margin-left: 30px; */
     background-color: white;
@@ -318,7 +324,7 @@ form {
 .daily-head {
     display: inline-block;
     color: #929292;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 14px;
 }
