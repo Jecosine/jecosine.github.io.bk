@@ -251,6 +251,16 @@ form {
     background-color: rgb(255, 170, 42);
     cursor: pointer;
 }
+#hcate {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 270px;
+    float: right;
+    width: 700px;
+    height: 510px;
+    background-color: white;
+}
 #center-container {
     display: inline-block;
     position: relative;
