@@ -79,7 +79,7 @@
 
                     </div>
                     <div id="hcate">                            
-                            <ul class="cate-detail" style="display: inline-block;"data-menu-id="16">
+                            <ul class="cate-detail" data-menu-id="16">
                                 <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">AUTOMOTIVE</a></li>
                                 <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Car Care</a></li>
                                 <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Car Electronics & Accessories</a></li>
@@ -423,12 +423,13 @@
         for (var i in bars){
             bars[i].onmouseover = function(){
                 // console.log(this.dataset);
-                hlist[this.dataset["index"]].style.display = "inline-block";
+                this.getElementsByTagName("div")[0].innerHTML = hlist[this.dataset["index"]].innerHTML;
+                // hlist[this.dataset["index"]].style.display = "inline-block";
                 // this.style.color = "black";
             }
             bars[i].onmouseout = function(){
-                
-                hlist[this.dataset["index"]].style.display = "none";
+                this.getElementsByTagName("div")[0].innerHTML = "";
+                // hlist[this.dataset["index"]].style.display = "none";
             }
         }
 
