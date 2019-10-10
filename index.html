@@ -42,11 +42,7 @@
                         <ul id="cate-l">
                             <li data-index="0">
                                 Arts &amp; Crafts
-                                <!-- <div class="sub-cate">
-                                    <div class="cate-detail">
-                                        <span class="cate-detail-item"></span>
-                                    </div> 
-                                </div>-->
+                                <div class="sub-cate"></div>
                             </li>
                             <li data-index="1">Automotive</li>
                             <li data-index="2">Baby</li>
@@ -83,7 +79,7 @@
 
                     </div>
                     <div id="hcate">                            
-                            <ul class="cate-detail" data-menu-id="16">
+                            <ul class="cate-detail" style="display: inline-block;"data-menu-id="16">
                                 <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">AUTOMOTIVE</a></li>
                                 <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Car Care</a></li>
                                 <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Car Electronics & Accessories</a></li>
@@ -427,7 +423,7 @@
         for (var i in bars){
             bars[i].onmouseover = function(){
                 // console.log(this.dataset);
-                hlist[this.dataset["index"]].style.display = "block";
+                hlist[this.dataset["index"]].style.display = "inline-block";
                 // this.style.color = "black";
             }
             bars[i].onmouseout = function(){
