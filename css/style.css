@@ -254,6 +254,7 @@ form {
 #hcate {
     position: absolute;
     display: inline-block;
+    display: none;
     top: 0;
     left: 270px;
     float: right;
