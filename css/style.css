@@ -249,18 +249,25 @@ form {
 #cate-l li:hover {
     color: #ffffff;
     background-color: rgb(255, 170, 42);
+    
     cursor: pointer;
 }
 #hcate {
     position: absolute;
     display: inline-block;
-    display: none;
     top: 0;
     left: 270px;
-    float: right;
     width: 700px;
     height: 510px;
+}
+#hcate > ul {
+    display: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+    color: black;
     background-color: white;
+    z-index: 999;
 }
 #center-container {
     display: inline-block;
