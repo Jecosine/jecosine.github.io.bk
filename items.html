@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/item.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+    </head>
+    <body>
+        <div id="navigation-container">
+            <div id="navigation-wrap">
+                <div id="icon-container"></div>
+                <div id="search-container">
+                    <div id="cate-container">
+                        <ul id="cate-list">
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="search-bar-bg">
+                        <form action="banana.jsp" method="GET">
+                            <input id="search-bar" type="text" name="search" placeholder="Search..."/>
+                            <button id="submit-button" type="submit"><div>Search <i class="fa fa-search" aria-hidden="true"></i></div></button>
+                        </form>
+                    </div>
+                </div>
+                <a href="#" id="cart"><div><i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart</div></a>
+            </div>
+            <div id="sub-navi">
+                <div id="subnavi-g">
+                    <a class="subnavi-item" href="#">Best Sellers</a>
+                    <a class="subnavi-item" href="#">Ranks</a>
+                    <a class="subnavi-item" href="#">Recommendations</a>
+                    <a class="subnavi-item" href="#">New Releases</a>
+                    <a class="subnavi-item" href="#">Gift Cards</a>
+                </div>
+            </div>
+        </div>
+        <div id="main-container">
+            <div id="main-wrap">
+                <div id="main-bg"></div>
+                <div id="main-wrapper">
+                    <div class="item-container">
+                        <div class="item-wrap">
+                            <div class="item-cover"></div>
+                            <div class="item-info">
+                                <div class="item-upper">
+                                    <div class="item-title"></div>
+                                    <div class="item-sells"></div>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="item-price"></div>
+                                    <div class="item-icons"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    
+                </div>
+            </div>
+
+
+        </div>
+        
+    </body>
+    <script>
+        var hlist = document.getElementById("hcate").getElementsByTagName("ul");
+        var sublist = hlist.children;
+        var clist = document.getElementById("cate-l");
+        var bars = clist.children;
+        
+        function showSub(){
+            console.log(this);
+        }
+    
+        for (var i = 0;i< 5; i++){
+            console.log(bars[i]);
+            bars[i].getElementsByTagName("div")[0].innerHTML = hlist[Number(bars[i].dataset["index"])].innerHTML;
+            bars[i].getElementsByTagName("div")[0].style.left = "9999px";
+            bars[i].getElementsByTagName("div")[0].style.display = "none";
+            bars[i].onmouseover = function(){
+                console.log(Number(this.dataset["index"]));
+                this.getElementsByTagName("div")[0].style.left = "240px";
+                this.getElementsByTagName("div")[0].style.display = "block";
+            }
+            bars[i].onmouseout = function(){
+                this.getElementsByTagName("div")[0].style.left = "9999px";
+                this.getElementsByTagName("div")[0].style.display = "none";
+            }
+        }
+
+    </script>
+
+</html>

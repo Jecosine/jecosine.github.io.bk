@@ -44,20 +44,62 @@
                                 Arts &amp; Crafts
                                 <div class="sub-cate"></div>
                             </li>
-                            <li data-index="1">Automotive</li>
-                            <li data-index="2">Baby</li>
-                            <li data-index="3">Beauty &amp; Personal Care</li>
-                            <li data-index="4">Books</li>
-                            <li data-index="5">Computers</li>
-                            <li data-index="6">Digital Music</li>
-                            <li data-index="7">Electronics</li>
-                            <li data-index="8">Kindle Store</li>
-                            <li data-index="9">Prime Video</li>
-                            <li data-index="10">Women's Fashion</li>
-                            <li data-index="11">Men's Fashion</li>
-                            <li data-index="12">Girls' Fashion</li>
-                            <li data-index="13">Boys' Fashion</li>
-                            <li data-index="14">Deals</li>
+                            <li data-index="1">
+								Automotive
+								<div class="sub-cate"></div>
+							</li>
+                            <li data-index="2">
+								Baby
+								<div class="sub-cate"></div>
+							</li>
+                            <li data-index="3">
+								Beauty &amp; Personal Care
+								<div class="sub-cate"></div>
+							</li>
+                            <li data-index="4">
+								Books
+								<div class="sub-cate"></div>
+							</li>
+                            <li data-index="5">
+								Computers
+								<div class="sub-cate"></div>
+							</li>
+                            <li data-index="6">
+								Digital Music
+								<div class="sub-cate"></div>
+							</li>
+                            <li data-index="7">
+								Electronics
+								<div class="sub-cate"></div>
+							</li>
+                            <li data-index="8">
+								Kindle Store
+								<div class="sub-cate"></div>
+							</li>
+                            <li data-index="9">
+								Prime Video
+								<div class="sub-cate"></div>
+							</li>
+                            <li data-index="10">
+								Women's Fashion
+								<div class="sub-cate"></div>
+							</li>
+                            <li data-index="11">
+								Men's Fashion
+								<div class="sub-cate"></div>
+							</li>
+                            <li data-index="12">
+								Girls' Fashion
+								<div class="sub-cate"></div>
+							</li>
+                            <li data-index="13">
+								Boys' Fashion
+								<div class="sub-cate"></div>
+							</li>
+                            <li data-index="14">
+								Deals
+								<div class="sub-cate"></div>
+							</li>
 <!--                             
                             <li data-index="1">Health &amp; Household</li>
                             <li data-index="1">Home &amp; Kitchen</li>
@@ -417,19 +459,24 @@
         var sublist = hlist.children;
         var clist = document.getElementById("cate-l");
         var bars = clist.children;
+        
         function showSub(){
             console.log(this);
         }
-        for (var i in bars){
+    
+        for (var i = 0;i< 5; i++){
+            console.log(bars[i]);
+            bars[i].getElementsByTagName("div")[0].innerHTML = hlist[Number(bars[i].dataset["index"])].innerHTML;
+            bars[i].getElementsByTagName("div")[0].style.left = "9999px";
+            bars[i].getElementsByTagName("div")[0].style.display = "none";
             bars[i].onmouseover = function(){
-                // console.log(this.dataset);
-                this.getElementsByTagName("div")[0].innerHTML = hlist[this.dataset["index"]].innerHTML;
-                // hlist[this.dataset["index"]].style.display = "inline-block";
-                // this.style.color = "black";
+                console.log(Number(this.dataset["index"]));
+                this.getElementsByTagName("div")[0].style.left = "240px";
+                this.getElementsByTagName("div")[0].style.display = "block";
             }
+                this.getElementsByTagName("div")[0].style.left = "9999px";
             bars[i].onmouseout = function(){
-                this.getElementsByTagName("div")[0].innerHTML = "";
-                // hlist[this.dataset["index"]].style.display = "none";
+                this.getElementsByTagName("div")[0].style.display = "none";
             }
         }
 

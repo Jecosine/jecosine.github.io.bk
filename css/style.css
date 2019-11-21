@@ -233,7 +233,7 @@ form {
     width: 100%;
     text-align: left;
 }
-#cate-l li {
+#cate-l > li {
     /* display: flex;
     flex-direction: row;
     align-items: center; */
@@ -255,10 +255,10 @@ form {
 .sub-cate {
     position: absolute;
     display: inline-block;
-    top: 10px;
+    top: 0;
     left: 240px;
     width: 600px;
-    height: 0;
+    
     z-index: 9999;
     background-color: white;
 }
@@ -275,17 +275,20 @@ form {
     display: none;
 }
 
-.sub-cate > li {
+.cate-detail-item {
     display: inline-block;
-    line-height: 30px;
+    width: auto;
     font-weight: 500;
     font-size: 15px;
     margin-left: 20px;
     margin-top: 20px;
-
 }
-.sub-cate > li > a {
+
+.sub-cate a {
+    display: inline-block;
     color: #767676;
+    text-decoration: none;
+    z-index: 999;
 }
 #center-container {
     display: inline-block;
