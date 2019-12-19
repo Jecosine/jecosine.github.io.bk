@@ -474,9 +474,11 @@
                 this.getElementsByTagName("div")[0].style.left = "240px";
                 this.getElementsByTagName("div")[0].style.display = "block";
             }
-                this.getElementsByTagName("div")[0].style.left = "9999px";
+                
             bars[i].onmouseout = function(){
-                this.getElementsByTagName("div")[0].style.display = "none";
+                this.getElementsByTagName("div")[0].style.left = "9999px";
+                //this.getElementsByTagName("div")[0].style.display = "none";
+                bars[i].getElementsByTagName("div")[0].innerHTML = "";
             }
         }
 
