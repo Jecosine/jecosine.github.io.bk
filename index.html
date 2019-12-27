@@ -294,20 +294,20 @@
                                 <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Filtration</a></li>
                                 <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Food Service Equipment & Supplies</a></li>
                                 <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Hydraulics, Pneumatics & Plumbing</a></li>
-                                <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Industrial Electrical</a></li>
-                                <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Industrial Hardware</a></li>
-                                <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Industrial Power & Hand Tools</a></li>
-                                <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Janitorial & Sanitation Supplies</a></li>
-                                <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Lab & Scientific Products</a></li>
-                                <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Material Handling Products</a></li>
-                                <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Occupational Health & Safety Products</a></li>
-                                <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Packaging & Shipping Supplies</a></li>
-                                <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Power Transmission Products</a></li>
-                                <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Professional Dental Supplies</a></li>
-                                <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Professional Medical Supplies</a></li>
-                                <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Raw Materials</a></li>
-                                <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Retail Store Fixtures & Equipment</a></li>
-                                <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Robotics</a></li>
+                                <!-- <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Industrial Electrical</a></li> -->
+                                <!-- <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Industrial Hardware</a></li> -->
+                                <!-- <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Industrial Power & Hand Tools</a></li> -->
+                                <!-- <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Janitorial & Sanitation Supplies</a></li> -->
+                                <!-- <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Lab & Scientific Products</a></li> -->
+                                <!-- <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Material Handling Products</a></li> -->
+                                <!-- <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Occupational Health & Safety Products</a></li> -->
+                                <!-- <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Packaging & Shipping Supplies</a></li> -->
+                                <!-- <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Power Transmission Products</a></li> -->
+                                <!-- <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Professional Dental Supplies</a></li> -->
+                                <!-- <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Professional Medical Supplies</a></li> -->
+                                <!-- <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Raw Materials</a></li> -->
+                                <!-- <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Retail Store Fixtures & Equipment</a></li> -->
+                                <!-- <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Robotics</a></li> -->
                                 <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Science Education</a></li>
                                 <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Tapes, Adhesives & Sealants</a></li>
                                 <li class="cate-detail-item"><a href="#" class="cate-detail-item-link">Test, Measure & Inspect</a></li>
@@ -444,6 +444,26 @@
                                 <a class="daily-head">Iphone 11 on sale now!</a>
                             </div>
                             <div class="more"></div>
+							<div class="daily-item">
+                                <div class="daily-icon hot-tag">HOT</div>
+                                <a class="daily-head">XiaoMI 9 Pro on sale now!</a>
+                            </div>
+                            
+                            <div class="more"></div>
+							<div class="daily-item">
+                                <div class="daily-icon hot-tag">HOT</div>
+                                <a class="daily-head">XiaoMI 9 Pro on sale now!</a>
+                            </div>
+                            <div class="daily-item">
+							
+                                <div class="daily-icon new-tag">NEW</div>
+                                <a class="daily-head">Sony Hi-res earphone preserving</a>
+                            </div>
+							<div class="daily-item">
+                                <div class="daily-icon new-tag">NEW</div>
+                                <a class="daily-head">Iphone 11 on sale now!</a>
+                            </div>
+                            <div class="more"></div>
          
                         </div>
                     </div>
@@ -464,23 +484,37 @@
             console.log(this);
         }
     
-        for (var i = 0;i< 5; i++){
+        for (var i = 0;i< 15; i++){
             console.log(bars[i]);
             bars[i].getElementsByTagName("div")[0].getElementsByTagName("ul")[0].innerHTML = hlist[Number(bars[i].dataset["index"])].innerHTML;
-            bars[i].getElementsByTagName("div")[0].getElementsByTagName("ul")[0].style.left = "9999px";
-            bars[i].getElementsByTagName("div")[0].getElementsByTagName("ul")[0].style.display = "none";
+            //bars[i].getElementsByTagName("div")[0].getElementsByTagName("ul")[0].style.left = "9999px";
+            bars[i].getElementsByTagName("div")[0].style.left = "9999px";
+            bars[i].getElementsByTagName("div")[0].style.display = "none";
+            //bars[i].getElementsByTagName("div")[0].getElementsByTagName("ul")[0].style.display = "none";
+			
             bars[i].onmouseover = function(){
                 console.log(Number(this.dataset["index"]));
-                this.getElementsByTagName("div")[0].getElementsByTagName("ul")[0].style.left = "240px";
-                this.getElementsByTagName("div")[0].getElementsByTagName("ul")[0].style.display = "block";
+                //this.getElementsByTagName("div")[0].getElementsByTagName("ul")[0].style.left = "240px";
+                this.getElementsByTagName("div")[0].style.left = "250px";
+                //this.getElementsByTagName("div")[0].getElementsByTagName("ul")[0].style.display = "block";
+                this.getElementsByTagName("div")[0].style.display = "block";
+				this.getElementsByTagName("div")[0].style.animation = "subcate-appear 0.3s";
+				this.getElementsByTagName("div")[0].style.boxShadow = "4px 4px 1px 1px rgba(0,0,0,0.16)";
             }
                 
             bars[i].onmouseout = function(){
-                this.getElementsByTagName("div")[0].getElementsByTagName("ul")[0].style.left = "9999px";
+                //this.getElementsByTagName("div")[0].getElementsByTagName("ul")[0].style.left = "9999px";
+                this.getElementsByTagName("div")[0].style.left = "9999px";
                 //this.getElementsByTagName("div")[0].getElementsByTagName("ul")[0].style.display = "none";
-                bars[i].getElementsByTagName("div")[0].getElementsByTagName("ul")[0].innerHTML = "";
+                this.getElementsByTagName("div")[0].style.display = "none";
+                //bars[i].getElementsByTagName("div")[0].getElementsByTagName("ul")[0].innerHTML = "";
+				this.getElementsByTagName("div")[0].style.boxShadow = "none";
+				
             }
-        }
+			//bars[i].getElementsByTagName("div")[0].getElementsByTagName("ul")[0].style.left = "9999px";
+            //bars[i].getElementsByTagName("div")[0].getElementsByTagName("ul")[0].style.display = "none";
+			bars[i].getElementsByTagName("div")[0].style.height = "510px";
+        }	
 
     </script>
 
