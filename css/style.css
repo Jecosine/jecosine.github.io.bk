@@ -283,8 +283,11 @@ form {
     display: none;
 }
 @keyframes la {
-	from { font-size: 13px; }
-	to { font-size: 15px; }
+	from { background-color: white; }
+    to { 
+        background-color: rgb(255, 170, 42);
+        box-shadow: 0 0 1px 1px rgba(0,0,0,0.16);
+    }
 
 }
 .cate-detail-item {
@@ -304,7 +307,7 @@ form {
 	margin-left: 3px;
 	margin-right: 3px;
 	font-weight: 600;
-	font-size: 13px;
+	font-size: 15px;
 	line-height: 25px;
 	height: 25px;
 	padding-left: 5px;
@@ -313,7 +316,7 @@ form {
 }
 .cate-detail-item > a {
 	text-decoration: none;
-	color： #767676;
+	color: #767676;
 }
 .cate-detail-item > a:hover {
 	color: white;
@@ -321,9 +324,9 @@ form {
 	background-color: rgb(255, 170, 42);
     cursor: pointer;
 	font-weight: 600;
-	animation: la 0.1s;
+	animation: la 0.5s;
 	font-size: 15px;
-	box-shadow: 0 0 1px 1px rgba(0,0,0,0.16);
+	
 }
 #center-container {
     display: inline-block;
