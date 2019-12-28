@@ -7,7 +7,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-    overflow: scroll;
+    overflow: scroll-y;
 }
 #navigation-container {
     position: absolute;
@@ -243,7 +243,7 @@ form {
 	z-index: 100;
 }
 #cate-l > li:hover {
-	
+    animation: catel-la 0.3s;
     color: #ffffff;
     background-color: rgb(255, 170, 42);
     cursor: pointer;
@@ -262,8 +262,8 @@ form {
 	
 }
 @keyframes subcate-appear {
-	from { box-shadow: 2px 0px 1px 1px rgba(0,0,0,0.16); }
-	to { box-shadow: 4px 4px 1px 1px rgba(0,0,0,0.16); }
+	from { box-shadow: 2px 0px 1px 1px rgba(0,0,0,0.16); opacity: 0.4;}
+	to { box-shadow: 4px 4px 1px 1px rgba(0,0,0,0.16); opacity: 1;}
 }
 .sub-cate > ul {
 	padding-top: 50px;
@@ -289,6 +289,10 @@ form {
         box-shadow: 0 0 1px 1px rgba(0,0,0,0.16);
     }
 
+}
+@keyframes catel-la {
+    from { background-color: #f7f7f7; }
+    to {background-color: rgb(255, 170, 42);}
 }
 .cate-detail-item {
     display: inline-block;
@@ -429,4 +433,12 @@ form {
 
 .new-tag {
     background-color: crimson;
+}
+
+#footer-container {
+    position: absolute;
+    margin-top: 80px;
+    width: 100%;
+    height: 200px;
+    background-color: #818181;
 }
