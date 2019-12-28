@@ -497,6 +497,15 @@ form {
     height: 30px;
     line-height: 30px;
 }
-.yellow {
+i.yellow {
     color: #FECD85;
+    margin-right: 5px;
+}
+i.yellow-l {
+    color: #FECD85;
+    height: 40px;
+    margin-top: 20px;
+    line-height: 40px;
+    margin-right: 5px;
+    font-size: 25px;
 }
